@@ -80,3 +80,46 @@ section h2 {
     margin-top: 0;
     color: var(--cor-destaque);
 }
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav div {
+  display: flex;
+  gap: 24px;
+}
+
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav > a {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  nav div {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+}
