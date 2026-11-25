@@ -20,7 +20,7 @@ header {
     padding: 64px 24px;
     text-align: center;
     color: white;
-    background-color: var(--cor-escura);
+    background-color: var(--cor-destaque);
 }
 
 header h1 {
@@ -102,8 +102,18 @@ nav a {
 }
 
 nav > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-size: 1.3rem;
   font-weight: bold;
+}
+
+header .marca-loja img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 50%;
 }
 
 nav a:hover {
